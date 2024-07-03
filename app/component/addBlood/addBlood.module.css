@@ -1,0 +1,157 @@
+/* addBlood.module.css */
+
+.AddBlood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #aba4a4;
+  padding: 20px;
+
+  
+}
+
+.main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.returnButton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: none;
+  border:1px solid red;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+
+}
+
+.returnButton:hover {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  transition: 1s;
+}
+
+.formHeader {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bloodForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bloodForm label {
+  font-size: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+.bloodForm input {
+  width:95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.bloodForm input[type="file"] {
+  padding: 3px;
+}
+
+.bloodForm button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bloodForm button:hover {
+  background-color: #0056b3;
+}
+
+.fileInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.customFileUpload {
+  background-color: #e7ebef;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.customFileUpload:hover {
+  background-color: #959799;
+}
+
+.uploadIcon {
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 15px;
+  }
+
+  .formHeader {
+    font-size: 20px;
+  }
+
+  .bloodForm input, .bloodForm button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px;
+  }
+
+  .formHeader {
+    font-size: 18px;
+  }
+
+  .bloodForm input, .bloodForm button {
+    font-size: 12px;
+  }
+}
+
+
