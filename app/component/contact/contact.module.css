@@ -1,78 +1,103 @@
 /* contact.module.css */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
   
-  .imageWrapper {
-    margin: 20px 0;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.imageWrapper {
+  margin-bottom: 20px;
+}
+
+.image {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.contactHeader {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.contactList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.contactList li a {
+  font-size: 28px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.contactList li a:hover {
+  color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
   }
   
   .description {
-    font-size: 1.1em;
-    text-align: center;
-    margin: 20px 0;
-    line-height: 1.6;
-    color: #333;
+    font-size: 16px;
   }
-  
-  .contactHeader {
-    font-size: 1.5em;
-    margin: 20px 0;
-    color: #555;
+
+  .contactList li a {
+    font-size: 24px;
   }
-  
-  .contactList {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .description {
+    font-size: 14px;
   }
-  
-  .contactList li {
-    margin: 0 10px;
+
+  .contactList li a {
+    font-size: 22px;
   }
-  
-  .contactList a {
-    color: #555;
-    font-size: 2em;
-    transition: color 0.3s ease;
-  }
-  
-  .contactList a:hover {
-    color: #0073e6;
-  }
-  
+
   .button {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
-  
-  .button:hover {
-    background-color: #005bb5;
-  }
-  
-  
+}

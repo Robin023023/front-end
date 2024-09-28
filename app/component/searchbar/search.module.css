@@ -199,4 +199,31 @@
   }
 }
 
+
+.dropdownList {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  border: 1px solid #ccc; /* Add border */
+  background-color: #fff; /* Background color */
+  max-height: 200px; /* Max height for the dropdown */
+  overflow-y: auto; /* Scroll if content exceeds max height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.dropdownItem {
+  padding: 10px 15px; /* Padding for list items */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.2s; /* Smooth background transition */
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+.dropdownItem:active {
+  background-color: #e0e0e0; /* Darker background on click */
+}
+
   
